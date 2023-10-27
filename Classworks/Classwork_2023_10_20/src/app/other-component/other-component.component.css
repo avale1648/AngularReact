@@ -1,0 +1,18 @@
+.card {
+  padding: 2rem;
+  border-radius: 2rem;
+  border-color: gray;
+}
+
+.card-header {
+  background-color: aliceblue;
+}
+
+.card-footer {
+  background-color: lightgray;
+}
+
+.btn {
+  border: 1px solid skyblue;
+  height: 50px;
+}
