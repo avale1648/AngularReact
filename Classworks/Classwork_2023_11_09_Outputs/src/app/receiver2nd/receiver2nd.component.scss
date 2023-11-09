@@ -1,0 +1,19 @@
+.container
+{
+    display: flex;
+    flex-direction: column;
+    background-color: greenyellow;
+    gap:20px;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    > span
+    {
+        color: black;
+    }
+    >h1
+    {
+        color:wheat;
+        font-size: 46px;
+    }
+}

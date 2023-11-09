@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: greenyellow;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.container > span {
+  color: black;
+}
+
+.container > h1 {
+  color: wheat;
+  font-size: 46px;
+}
