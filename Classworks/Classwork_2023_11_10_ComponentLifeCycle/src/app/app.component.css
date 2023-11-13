@@ -1,0 +1,36 @@
+.container {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 3rem;
+  gap: 20px;
+}
+
+.style-class-1 {
+  background-color: coral;
+}
+
+.style-class-2 {
+  border-radius: 10px;
+}
+
+.main {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  border: 1px solid black;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}

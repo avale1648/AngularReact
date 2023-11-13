@@ -1,0 +1,28 @@
+<app-some-component [username]="name"></app-some-component>
+<input [(ngModel)]="name" type="text">
+<div [ngClass]=
+"{'container': true,'style-class-1': isColourful, 'style-class-2': isRoundCorners}">
+<p>test</p>
+</div>
+<button (click)="setRoundCorners()">Острые углы</button>
+<button (click)="setColour()">Цвет</button>
+<div [ngClass]="{container: true}">
+    <div [ngClass]="{'main': true, 'red': colour === 0}"></div>
+    <div [ngClass]="{'main': true, 'yellow': colour === 1}"></div>
+    <div [ngClass]="{'main': true, 'green': colour === 2}"></div>
+</div>
+<div>
+    <label>
+        <input type="radio" name="color" value="red" (change)="setColourNew(0)">
+        Красный
+    </label>
+    <label>
+        <input type="radio" name="color" value="yellow" (change)="setColourNew(1)">
+        Желтый
+    </label>
+    <label>
+        <input type="radio" name="color" value="green" (change)="setColourNew(2)">
+        Зеленый
+    </label>
+</div>
+
