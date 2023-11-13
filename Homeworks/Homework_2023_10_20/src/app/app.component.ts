@@ -22,11 +22,10 @@ export class AppComponent {
   name: string = "";
   price: number = 0;
   quantity: number = 0;
-  items: Item[] = [new Item("Молоко",100,1)];
+  items: Item[] = [];
   addToBag(name: string, price: number, quantity: number)
   {
-    console.log(new Item(name, price, quantity));
-    this.items.push();
+    this.items.push(new Item(name, price, quantity));
     this.total = this.total + (this.items[this.items.length - 1].price * this.items[this.items.length - 1].quantity);
   }
 }
