@@ -1,0 +1,111 @@
+<mat-toolbar>
+    <span>User Profile</span>
+    <div class="mat-toolbar-row">
+      <span class="example-spacer" style="flex: 1 1 auto;"></span>
+    <input matInput>
+    <button mat-icon-button>
+      <mat-icon>search</mat-icon>
+    </button>
+    <button mat-icon-button>
+      <mat-icon>settings</mat-icon>
+    </button>
+    <button mat-icon-button>
+      <mat-icon matBadge="5">notifications</mat-icon>
+    </button>
+    <button mat-icon-button>
+      <mat-icon>person</mat-icon>
+    </button>
+    </div>
+  </mat-toolbar>
+  
+  
+  <mat-grid-list cols="3" rowHeight="1:1.2" >
+    <mat-grid-tile colspan="2">
+      <mat-card style="flex: 1 1 auto;">
+          <mat-card-header>
+      <mat-toolbar class="example-spacer mat-toolbar-fixed" color="primary">
+        <span>Edit Profile</span>
+        <div class="mat-toolbar-row">
+          <span class="example-spacer" style="flex: 1 1 auto"></span></div>
+      </mat-toolbar>
+    </mat-card-header>
+    <mat-card-content>
+  <div>
+      <mat-form-field style="width: 36%; margin-right: 2%;">
+        <mat-label>Company (disabled)</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-form-field style="width: 30%; margin-right: 2%;">
+        <mat-label>Username</mat-label>
+        <input matInput>
+      </mat-form-field>
+        <mat-form-field style="width: 30%;">
+          <mat-label>Enter your email</mat-label>
+          <input matInput placeholder="pat@example.com" required>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field style="width: 49%; margin-right: 2%;">
+          <mat-label>Fist Name</mat-label>
+          <input matInput>
+        </mat-form-field>
+        <mat-form-field style="width: 49%;">
+          <mat-label>Last Name</mat-label>
+          <input matInput>
+        </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field style="width: 100%;">
+            <mat-label>Address</mat-label>
+            <input matInput>
+          </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field style="width: 32%; margin-right: 2%;">
+              <mat-label>City</mat-label>
+              <input matInput>
+            </mat-form-field>
+            <mat-form-field style="width: 32%; margin-right: 2%;">
+              <mat-label>Country</mat-label>
+              <input matInput>
+            </mat-form-field>
+            <mat-form-field style="width: 32%;">
+              <mat-label>Postal Code</mat-label>
+              <input matInput>
+            </mat-form-field>
+          </div>
+          <div>About Me</div>
+          <div>
+            <mat-form-field style="width: 100%;">
+              <mat-label>Address</mat-label>
+              <textarea matInput></textarea>
+            </mat-form-field>
+          </div>
+          <div>
+            <button mat-raised-button color="primary" style="margin-left: 80%;">
+              UPDATE PROFILE
+            </button>
+          </div>
+    </mat-card-content>
+  </mat-card>
+    </mat-grid-tile>
+  
+    <mat-grid-tile>
+      <mat-card style="flex: 1 1 auto; text-align: center;">
+        <img mat-card-image style="width: 100px;height: 100px; border-radius: 50%; margin-left: 40%;" src="https://www.newsclick.in/sites/default/files/styles/responsive_885/public/2017-10/Che%20Guevara2.jpg" alt="Фото">
+        <mat-card-title>avale1648</mat-card-title>
+        <h3>Back-end Developer</h3>
+        <mat-card-content class="text-block">
+          <p>
+            - 23 lvl<br>
+            - he/him<br>
+            - Junior Back-end Developer<br>
+            - Communist<br>
+          </p>
+        </mat-card-content>
+        <mat-card-actions class="button-block">
+          <button mat-raised-button color="primary" style="margin-left: 40%;">FOLLOW</button>
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
