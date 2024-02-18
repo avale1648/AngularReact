@@ -1,0 +1,24 @@
+.item-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 25px; 
+  }
+  .card {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  .card-header {
+    margin-bottom: 15px;
+  }
+  .card-footer {
+    margin-top: auto;
+  }
+  .button-group {
+    margin-top: 15px;
+  }
