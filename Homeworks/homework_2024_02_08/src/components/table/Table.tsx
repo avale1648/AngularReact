@@ -1,6 +1,6 @@
 interface I_Post{
     id: number;
-    header: string;
+    title: string;
     body: string;
 }
 interface I_PostTableProps{
@@ -18,7 +18,7 @@ function Table({posts}: I_PostTableProps){
             <tbody>
                 {posts.map((post) => (
                     <tr key={post.id}>
-                        <td>{post.header}</td>
+                        <td>{post.title}</td>
                         <td>{post.body}</td>
                     </tr>
                 ))}

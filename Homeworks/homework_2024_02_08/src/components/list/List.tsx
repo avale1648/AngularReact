@@ -1,6 +1,6 @@
 interface I_Post{
     id: number;
-    header: string;
+    title: string;
     body: string;
 }
 interface I_PostListProps{
@@ -11,7 +11,7 @@ function List({posts}: I_PostListProps){
         <ul className="list">
             {posts.map((post)=>(
                 <li key={post.id} className="list-item">
-                    <h3>{post.header}</h3>
+                    <h3>{post.title}</h3>
                     <p>{post.body}</p>
                 </li>
             ))}

@@ -2,23 +2,23 @@ import axios from "axios";
 import React, { useState } from "react";
 interface I_Post{
     id: number;
-    header: string;
+    title: string;
     body: string;
 }
 interface I_PostFromProps{
     onAddPost: (post: I_Post) => void;
 }
 function Form({onAddPost}: I_PostFromProps){
-    const [header,setHeader] = useState<string>('');
+    const [title,setTitle] = useState<string>('');
     const [body, setBody] = useState<string>('');
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        if(!header.trim() || !body.trim()) return;
+        if(!title.trim() || !body.trim()) return;
         try{
-            const response = await axios.post<I_Post>('https://jsonplaceholder.typicode.com/posts', { header, body });
+            const response = await axios.post<I_Post>('https://jsonplaceholder.typicode.com/posts', { header: title, body });
             const newPost = response.data;
             onAddPost(newPost);
-            setHeader('');
+            setTitle('');
             setBody('');
         } catch(error){
             console.error('Error added: ', error);
@@ -28,7 +28,7 @@ function Form({onAddPost}: I_PostFromProps){
         <form onSubmit={handleSubmit}>
             <div>
                 <label htmlFor="header" className="label">Заголовок</label>
-                <input type="text" className="control" id="header" value={header} onChange={(e) => setHeader(e.target.value)}/>
+                <input type="text" className="control" id="header" value={title} onChange={(e) => setTitle(e.target.value)}/>
             </div>
             <div>
                 <label htmlFor="body" className="label">Тело</label>

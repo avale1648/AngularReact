@@ -8,7 +8,7 @@ import Table from './components/table/Table';
 import './styles.css';
 interface I_Post{
   id: number;
-  header: string;
+  title: string;
   body: string;
 }
 function App() {
